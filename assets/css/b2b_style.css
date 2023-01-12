@@ -682,8 +682,146 @@ form.search_tab_main input[type="text"] {
   letter-spacing: -0.03em;
   color: #959595;
 }
-
+.history_detail_main {
+  width: 100%;
+  float: left;
+  margin: 0;
+}
+.history_inner_main {
+  width: 100%;
+  float: left;
+  background: #FFFFFF;
+  box-shadow: 0px 2px 5px rgba(10, 72, 107, 0.07);
+  border-radius: 10px;
+  padding: 30px;
+  margin: 15px 0;
+  display: flex;
+  flex-wrap: wrap;
+}
+.history_tab_inner {
+  width: 174px;
+  float: left;
+}
+.history_main_data h3 {
+  font-family: 'Lato';
+  font-style: normal;
+  font-weight: 700;
+  font-size: 22px;
+  line-height: 26px;
+  color: #414141;
+  margin: 0 0 10px 0;
+}
+.history_main_data .date_below {
+  margin-bottom: 20.88px;
+}
+.history_main_data h4 {
+  font-family: 'Lato';
+  font-style: normal;
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 22px;
+  color: #414141;
+  margin: 0 0 10px 0;
+}
+.history_main_data p {
+  font-family: 'Lato';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 22px;
+  color: #414141;
+  margin: 0;
+  display: -webkit-box;
+  -webkit-line-clamp: 3;
+  -webkit-box-orient: vertical;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+.history_main_data {
+  width: calc(100% - 525px);
+  float: left;
+  padding: 0 30px;
+  display: flex;
+  align-items: center;
+}
+.view_pay_detail_main {
+  width: 351px;
+  float: left;
+  border-left: 1px solid #D2D2D2;
+  display: flex;
+  align-items: center;
+  padding-left: 30px;
+}
+.view_pay_detail_main a {
+  display: inline-block;
+  background: #FFFFFF;
+  border: 1.5px solid #FF385C;
+  border-radius: 8px;
+  width: 100%;
+  padding: 21.5px 10px;
+  font-family: 'Lato';
+  font-style: normal;
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 19px;
+  text-align: center;
+  color: #FF385C;
+  text-decoration: none;
+}
+.view_pay_detail_main_inner {
+  width: 100%;
+  float: left;
+}
+.view_pay_detail_main_inner a.btn_pay_view-comm.pay_now_btn {
+  background-color: #FF385C;
+  color: #fff;
+  margin-top: 15px;
+}
 /* Gift History CSS Ends */
+
+/* Campaign Details CSS */
+.location_path {
+  width: 100%;
+  float: left;
+  margin: 52px 0 30px 0;
+}
+.location_path a svg {
+  margin-right: 14px;
+}
+.location_path a {
+  font-family: 'Lato';
+  font-style: normal;
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 19px;
+  letter-spacing: 0.02em;
+  color: #FF385C;
+  text-decoration: none;
+}
+span.slash_desti {
+  margin: 0 15px;
+}
+.personlized_campaigns {
+  background-color: #FFFFFF;
+  box-shadow: 0px 2px 5px rgba(10, 72, 107, 0.07);
+  border-radius: 10px;
+  padding: 30px 34px;
+  height: 100%;
+  display: flex;
+}
+.personlized_campaigns .graph_main {
+  margin: 0;
+}
+.personlized_campaigns .graph_inner_image {
+  width: 173px;
+}
+.personlized_campaigns .graph_inner_data {
+  width: calc(100% - 173px);
+}
+.recipt_personalized .row .row .col-md-6:nth-child(-n+2) .block_gift_inner {
+  margin-bottom: 20px;
+}
+/* Campaign Details CSS Ends*/
 
 @media only screen {
   .toggleSwitch {     display: inline-block;     height: 18px;     position: relative;     overflow: visible;     padding: 0;     margin-left: 50px;     cursor: pointer;     width: 40px   }
@@ -795,7 +933,14 @@ div#reportrange span {     display: inline-block;     width: auto;     vertical-
 svg.arrow_svg {     margin: 0 0 0 24px; }
 
 
-
+@media only screen and (max-width: 1500px) {
+  .history_main_data {
+      width: calc(100% - 385px);
+  }
+  .view_pay_detail_main {
+      width: 211px;
+  }
+}
 
 
 

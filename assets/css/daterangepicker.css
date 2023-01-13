@@ -191,7 +191,7 @@
 }
 
 .daterangepicker td.in-range {
-  background-color: #ebf4f8;
+  background-color: #FFF4F6;
   border-color: transparent;
   color: #000;
   border-radius: 0;
@@ -331,10 +331,13 @@
 }
 
 .daterangepicker .ranges li.active {
-  background-color: #08c;
+  background-color: #ff385c;
   color: #fff;
 }
-
+.daterangepicker .drp-buttons .btn:last-child {
+    background: #ff385c;
+    border-color: #ff385c;
+}
 /*  Larger Screen Styling */
 @media (min-width: 564px) {
   .daterangepicker {

@@ -840,7 +840,7 @@ h6.add-recipt-text {
   background: #FFFFFF;
   box-shadow: 0px 2px 5px rgba(10, 72, 107, 0.07);
   border-radius: 10px;
-  margin-top: 15px;
+  margin-top: 20px;
 }
 .btob_table tr th {
   width: 20%;
@@ -896,6 +896,12 @@ h6.add-recipt-text {
 }
 .btob_table table tr {
   border-bottom: 1px solid #E2E2E2;
+}
+.btob_table table tr:last-child {
+  border: 0;
+}
+.block_gift_inner.money_recipt_pop {
+  cursor: pointer;
 }
 /* Campaign Details CSS Ends*/
 

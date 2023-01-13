@@ -942,11 +942,12 @@ h6.add-recipt-text {
 .sidebar_listing_outer ul li {     float: left;     width: 100%;     list-style-type: none; }
 .sidebar_listing_outer ul li.send_gift_li a {     padding: 8px 12px; }
 .sidebar_listing_outer ul li a {position: relative;    float: left;     width: 100%;     padding: 15px 21px;     font-weight: 700;     font-size: 18px;     line-height: 28px;     color: #777;     text-decoration: none; border-radius:10px;}
-.sidebar_listing_outer ul li.active a:before {     width: 100%; }
+.sidebar_listing_outer ul li.active a:before {     width: 100%; background: #ffcfcf47;}
 .sidebar_listing_outer ul li.active a {   color:#FF385C;}
+
 .sidebar_listing_head ul li.active a {     color: #FF385C; }
-.sidebar_listing_outer ul li a:hover:before {width:100%;}
-.sidebar_listing_outer ul li a:before {     content: '';     background: #ffcfcf47;     width: 0%;     transition: 0.4s ease all;border-radius:10px;     height: 100%;     left: 0;     position: absolute;     top: 0; }
+.sidebar_listing_outer ul li a:hover:before {width:100%;    }
+.sidebar_listing_outer ul li a:before {     content: '';    background: #fafafa;     width: 0%;     transition: 0.4s ease all;border-radius:10px;     height: 100%;     left: 0;     position: absolute;     top: 0; }
 .sidebar_listing_head ul li.active a:after {     content: '';     position: absolute;     left: 0;     width: 100%;     height: 5px;     bottom: 0;     background: #FF385C;     border-radius: 20px 20px 0px 0px; }
 .sidebar_listing_outer ul li a svg {position:relative;     display: inline-block;     margin: 0 25px 0 0;     vertical-align: middle; }
 .sidebar_listing_outer ul li.active a path {     fill: #ff385c; }
@@ -969,7 +970,9 @@ h6.add-recipt-text {
 .campaign_section {     background: #fff;     border-radius: 15px;     padding: 34px 40px;     margin: 30px 0 0 0; }
 .campaign_outer h2 {     float: left;     width: 100%;     margin: 0 0 15px 0;     font-weight: 700;     font-size: 22px;     line-height: 32px; /* identical to box height, or 145% */     letter-spacing: -0.03em; }
 .campaign_inner {     display: grid;     display: -ms-grid;     grid-column-gap: 30px;     grid-template-columns: repeat(2, 1fr); }
-.campaign_details {     float: left;     width: 100%;     padding: 40px;     background: #FAFAFA;     border-radius: 10px;     display: flex; }
+.campaign_details {     float: left;     width: 100%;     padding: 40px;     background: #FAFAFA;     border-radius: 10px;     display: flex; text-align: left;     border: 1px solid #fafafa;}
+.campaign_details:hover { border-color:#FF385C; background:#fff;}
+
 .campaign_details_content {     float: left;     width: auto;     padding: 0 0 0 30px; }
 .campaign_details_icon svg {     float: left;     width: auto; }
 .campaign_details_icon {     float: left;     width: auto; }
@@ -988,13 +991,14 @@ h6.add-recipt-text {
 .help_outer table tbody tr {     border-bottom: 1px solid #E2E2E2;    vertical-align: top; }
 .help_outer table tbody tr:last-child{border-bottom:none;}
 .help_outer table td img {     margin: 0 12px 0 0; }
-.dashboard_heading .dropdown ul.dropdown-menu {     box-shadow: 0px 5px 8px rgb(0 0 0 / 15%);     border-radius: 10px;      padding: 5px 0 0 0;   border: none;     width: 235px;     right: 0px !important;     left: inherit !important;}
+.dashboard_heading .dropdown ul.dropdown-menu {     box-shadow: 0px 5px 8px rgb(0 0 0 / 15%);     border-radius: 10px;      padding: 10px 0 10px 0;   border: none;     width: 235px;     right: 0px !important;     left: inherit !important;}
 .dashboard_heading .dropdown ul.dropdown-menu li {     display: inline-block;     width: 100%;     padding: 0 10px; }
 .dashboard_heading .dropdown ul.dropdown-menu li a {     padding: 13.5px 23px 13.5px 19px;     display: flex;     align-items: center;     border-radius: 10px;     height: 55px;     font-weight: 700;     font-size: 16px;     line-height: 28px;     color: #414141;     letter-spacing: 0.05em;     text-decoration: none; }
-.dashboard_heading .dropdown ul.dropdown-menu li a svg {     margin: 0 15px 0 0; }
-.dashboard_heading .dropdown ul.dropdown-menu li.log_out_drop {padding: 0; margin:5px 0 0 0;}
-.dashboard_heading .dropdown ul.dropdown-menu li.log_out_drop a {     background: #ff385c;     color: #fff;     padding: 13.5px 23px 13.5px 31px;     border-radius: 0 0px 8px 8px; }
-.dashboard_heading .dropdown ul.dropdown-menu li.log_out_drop a svg path {     fill: #fff; }
+
+.dashboard_heading .dropdown ul.dropdown-menu li a svg {   transition:0.4s ease all;  margin: 0 15px 0 0; }
+.dashboard_heading .dropdown ul.dropdown-menu li.log_out_drop {/* padding: 0; margin:5px 0 0 0; */}
+.dashboard_heading .dropdown ul.dropdown-menu li.log_out_drop a {/*      background: #ff385c;     color: #fff;     padding: 13.5px 23px 13.5px 31px;     border-radius: 0 0px 8px 8px;  */}
+.dashboard_heading .dropdown ul.dropdown-menu li.log_out_drop a svg path {     /* fill: #fff;  */}
 .campaign_select select {     float: left;     width: auto;     padding:7px 42px 7px 18px;     background: #FFFFFF;     border: 1px solid #DDDDDD;     border-radius: 8px;     -webkit-appearance: none;     font-weight: 700;     font-size: 14px;     color: #414141; }
 .campaign_select {     float: left;     width: auto;     position: relative; }
 .campaign_select svg {    pointer-events:none; position: absolute;     right: 9px;     top: 47%;     transform: translateX(-50%);     -webkit-transform: translateX(-50%); }
@@ -1008,7 +1012,6 @@ div#reportrange {   cursor:pointer;  background: #FFFFFF;     box-shadow: 0px 2p
 div#reportrange span {     display: inline-block;     width: auto;     vertical-align: middle;     font-size: 14px;     line-height: 17px;     color: #9B9B9B;     font-weight: 700; }
 svg.arrow_svg {     margin: 0 0 0 24px; }
 
-
 @media only screen and (max-width: 1500px) {
   .history_main_data {
       width: calc(100% - 385px);
@@ -1017,7 +1020,33 @@ svg.arrow_svg {     margin: 0 0 0 24px; }
       width: 211px;
   }
 }
-
+.dashboard_heading .dropdown ul.dropdown-menu li a.dropdown-item:active{    background-color: #e9ecef;}
+.g-profile-edit {     display: flex;     align-items: center;     border-bottom: none;   }
+.g-profile-img-first {     background-color: #FFE5EA;     border-radius: 50%;     width: 144px;     height: 144px;     display: flex;     margin-right: 34px;     position: relative;     align-items: center;     justify-content: center;}
+.g-profile-img span {     font-style: normal;     font-weight: 700;     font-size: 64px;     line-height: 77px;     color: #FF385C; }
+.g-profile-upload-img {     position: absolute;     right: 10px;     bottom: -7px; }
+.g-profile-upload-img .gt-btn-custom {     padding: 0;     box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;     background: #ffffff;     border: none;     border-radius: 50px;     height: 40px;     width: 40px;     line-height: inherit;     display: flex;     align-items: center;     justify-content: center; margin:0;}
+.profile_name_inner_section {     display: flex;     align-items: center;     margin: 0 0 0 0; }
+.g-profile-name .profile_name_inner_section input {     border: 0;     border-radius: 0;     border-bottom: 1px solid #D2D2D2;     font-weight: 700;     font-size: 24px;     line-height: 29px;     max-width: 220px;     min-height: 44px;     padding: 0; }
+div.g-account-profile .profile-main-title img {     margin-left: 16px; }
+.g-profile-name span {     font-style: normal;     font-weight: 700;     font-size: 18px;     line-height: 28px;     letter-spacing: 0.05em;     color: #414141; }
+.account_box_main {     margin: 30px 0 0 0px; }
+.g-profile-name h6 {     font-style: normal;     font-weight: 700;     font-size: 24px;     line-height: 29px;     color: #000000;     margin-bottom: 0;     display: flex;     align-items: center;     min-height: 40px; }
+.profile_name_inner_section a{margin:0 0 0 15px;}
+.profile_name_section p {     font-weight: 400;     font-size: 16px;     line-height: 28px;     color: #414141;     float: left;     width: 100%;     margin: 0; }
+.a_boxes_main{    padding: 41px 38px 40px 38px;     background: #FFFFFF;     box-shadow: 0px 2px 5px rgb(10 72 107 / 7%);     -webkit-box-shadow: 0px 2px 5px rgb(10 72 107 / 7%);     border-radius: 10px;margin-bottom:30px;}
+.a_boxes_title h4 {     float: left;     width: 100%;     font-weight: 700;     font-size: 28px;     margin: 0 0 30px 0;     line-height: 34px;     color: #414141; }
+.a_boxes_title img {     margin: 0 0 0 11px;     display: inline-block;     vertical-align: middle; }
+.a_boxes_dtl label {     float: left;     width: 30%;     font-weight: 400;     font-size: 18px;     line-height: 22px;     color: #717171; }
+.a_boxes_desc {     float: left;     width: 70%;     text-align: left; }
+.a_boxes_desc .kwt-file {     max-width: 100%;     margin: 0;     float: left;     width: auto; }
+.a_boxes_desc .kwt-file .kwt-file__drop-area {     flex-direction: row;     padding: 15px 30px;     border: none; }
+.a_boxes_desc .kwt-file .kwt-file__drop-area span.kwt-file__choose-file {     margin: 0 14px 0 0;     height: auto;     width: auto;     background: transparent; }
+.a_boxes_desc .kwt-file .kwt-file__drop-area span.kwt-file__msg {     font-size: 16px; }
+.a_boxes_dtl {     display: flex;     align-items: center;     margin: 0 0 16px 0; }
+.a_boxes_dtl:last-child {     margin: 0; }
+.a_boxes_desc p {     float: left;     width: 100%;     font-weight: 700;     font-size: 18px;     line-height: 28px;     color: #414141;     margin: 0; }
+.a_boxes_desc .kwt-file .kwt-file__drop-area .kwt-file__delete {     position: relative;     left: 0;     top: 0;     margin: 0 0 0 15px; }
 
 
 

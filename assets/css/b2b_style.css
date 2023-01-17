@@ -115,7 +115,7 @@ div.allow_gift_inner {     background: #F7F7F7;     border-radius: 8px;     padd
 .allow_gift_inner h3 {     float: left;     width: auto;     font-weight: 700;     font-size: 18px;     line-height: 24px;     margin: 0; }
 /*  Toggle Switch  */
 .toggleSwitch span span {   display: none; }
-.block_gift_inner {   display: flex;   background: #FFFFFF;   box-shadow: 0px 2px 5px rgba(10, 72, 107, 0.07);   border-radius: 10px;   padding: 20px 20px 20px;   min-height: 127px;   align-items: center;   position: relative; }
+.block_gift_inner {display: flex;background: #FFFFFF;box-shadow: 0px 2px 5px rgba(10, 72, 107, 0.07);border-radius: 10px;padding: 20px 20px 20px;min-height: 127px;align-items: center;position: relative;transition: all ease .3s;}
 .block_icon {   width: 67px;   height: 67px;   background: #FF385C;   border-radius: 100px;   display: flex;   justify-content: center;   align-items: center;   margin-right: 15px; }
 .display_block_content {     width: calc(100% - 82px);     margin-left: auto;     display: flex;     justify-content: space-between;     position: initial;     align-items: flex-end; }
 .display_gift_block {   margin-top: 30px; }
@@ -263,7 +263,7 @@ body.dashboard_body .dashboard_main {   float: left;   width: calc(100% - 383px)
 .value_graph .value_graphn_range h5 {
   float: left;
 }
-.value_graph .value_graphn_range .val_range.green_rnge {
+.value_graph .value_graphn_range .val_range {
   width: calc(100% - 70px);
   display: inline-block;
   padding-left: 43px;
@@ -905,7 +905,124 @@ h6.add-recipt-text {
 .contact_input_dtl input:focus + label, .contact_input_dtl input.has-value + label {top: 7px;font-size: 12px;line-height: 14px;color: #959595;}
 .finder-second-age-input:has(.finder-second-age:checked[type=radio]) label {color: #FF385C;border-color: #FF385C;background: #fff;}
 .kwt-file__drop-area {cursor: pointer;}
-
+div#add_recipt_modal .modal-dialog {width: 754px;max-width: 754px;}
+div#add_recipt_modal button.btn-close {
+  position: absolute;
+  right: 28px;
+  top: 29px;
+  z-index: 99;
+  padding: 0;
+}
+div#add_recipt_modal .modal-body {padding: 0;}
+div#add_recipt_modal .add_contact_heading {margin: 0;padding: 20px 30px;width: 100%;float: left;border-bottom: 1px solid #E2E2E2;}
+div#add_recipt_modal .contact_form_modal {
+  padding: 22px 30px 30px 30px;
+}
+div#add_recipt_modal .contact_form_modal .kwt-file__drop-area {
+  background-color: #FFF4F6;
+  border-radius: 8px;
+  padding: 16px 20px;
+}
+div#add_recipt_modal .contact_form_modal .kwt-file__drop-area span.kwt-file__msg {
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 19px;
+  text-align: center;
+  color: #FF385C;
+}
+div#add_recipt_modal .contact_form_modal h3 {
+  font-family: 'Lato';
+  font-style: normal;
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 22px;
+  text-transform: uppercase;
+  color: #717171;
+  display: flex;
+  align-items: center;
+  margin: 0px 0px 7px 0px;
+}
+div#add_recipt_modal .contact_form_modal h3 svg {
+  margin: 0 6px 0px 0;
+}
+div#add_recipt_modal .contact_form_modal input {
+  width: 100%;
+  background: #FFFFFF;
+  border: 1px solid #E2E2E2;
+  padding: 18px 22px;
+  border-radius: 8px;
+  margin: 0 0 20px 0;
+}
+div#add_recipt_modal a {
+  height: 100%;
+  background-color: #FFF4F6;
+  border-radius: 8px;
+  padding: 15px 20px;
+  font-family: 'Lato';
+  font-style: normal;
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 19px;
+  text-align: center;
+  color: #FF385C;
+  text-decoration: none;
+  display: flex;
+  align-items: center;
+}
+div#add_recipt_modal a svg {
+  margin: 0 10px 0 0px;
+}
+div#add_recipt_modal .contact_form_modal .a_boxes_desc {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  flex-direction: row-reverse;
+}
+div#add_recipt_modal .contact_form_modal buton {
+  background-color: #FF385C;
+  border-radius: 8px;
+  width: 100%;
+  display: block;
+  float: left;
+  padding: 19px 0;
+  font-family: 'Lato';
+  font-style: normal;
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 22px;
+  text-align: center;
+  color: #FFFFFF;
+  margin: 20px 0 0 0;
+  cursor: pointer;
+  border: 1px solid #FF385C;
+  transition: all ease .2s;
+}
+div#add_recipt_modal .contact_form_modal buton:hover {
+  background-color: #fff;
+  color: #FF385C;
+}
+.campaigns_detail_body.add_more_recipt_main .block_gift_inner {
+  min-height: 108px;
+  margin-bottom: 20px;
+}
+.campaigns_detail_body.add_more_recipt_main .block_gift_inner:last-child {
+  margin: 0;
+}
+.campaigns_detail_body.add_more_recipt_main .graph_inner_image {
+  width: 289px;
+}
+.campaigns_detail_body.add_more_recipt_main .graph_inner_data {
+  width: calc(100% - 289px);
+}
+.campaigns_detail_body.add_more_recipt_main .graph_data_head {
+  margin-right: 100px;
+}
+.campaigns_detail_body.add_more_recipt_main  .value_graph .value_graphn_range .val_range {
+  padding-left: 100px;
+}
+.block_gift_inner.money_recipt_pop:hover {
+  background-color: #FFF4F6;
+}
 
 @media only screen {
   .toggleSwitch {     display: inline-block;     height: 18px;     position: relative;     overflow: visible;     padding: 0;     margin-left: 50px;     cursor: pointer;     width: 40px   }

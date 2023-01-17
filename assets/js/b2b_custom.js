@@ -28,6 +28,17 @@ $(document).ready(function(){
 		  $(this).addClass('has-value');
 		}
 	});
+	$('.contact_form_modal input').val("");
+	  $('.contact_form_modal input').focusout(function() {
+		var text_val = $(this).val();
+		if (text_val === "") {
+		  console.log("empty!");
+		  $(this).removeClass('has-value');
+		} else {
+		  $(this).addClass('has-value');
+		}
+	});
+
 
 	$(".finder-second-age-input label").click(function () {
 		$(".finder-second-age-input label").removeClass('label-bg');

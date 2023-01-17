@@ -6,10 +6,9 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="shortcut icon" href="assets/images/favicon.png" type="image/x-icon">
-    <title>Account Settings</title>
+    <title>Contact Details</title>
     <!-- Link All CSS -->
     <link rel="stylesheet" href="assets/css/bootstrap.min.css" />
-	<link rel="stylesheet" href="assets/css/file_upload.css" />
     <link rel="stylesheet" href="assets/css/b2b_style.css" />
 	<link href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&display=swap" rel="stylesheet" />
 	<style>
@@ -68,7 +67,7 @@
 									<span>My Campaigns</span>
 								</a>
 							</li>
-							<li>
+							<li class="active">
 								<a href="javascript:void(0);">
 									<svg width="25" height="25" viewBox="0 0 25 25" fill="none" xmlns="http://www.w3.org/2000/svg">
 										<g clip-path="url(#clip0_277_3413)">
@@ -114,7 +113,7 @@
 									<span>My Payments</span>
 								</a>
 							</li>
-							<li class="active">
+							<li>
 								<a href="javascript:void(0);">
 									<svg width="25" height="25" viewBox="0 0 25 25" fill="none" xmlns="http://www.w3.org/2000/svg">
 										<g clip-path="url(#clip0_277_3405)">
@@ -152,7 +151,7 @@
 		<div class="dashboard_main">
 			<div class="dashboard_inner_main">
 				<div class="dashboard_heading define_float">
-					<h2>Account Settings</h2>
+					<h2>Contact Us</h2>
 					<div class="dropdown">
 						<button class="btn dropdown-toggle" type="button" id="dropdownMenuButton" data-bs-toggle="dropdown" aria-expanded="false">
 							<span class="user_profile_txt">M</span>        
@@ -277,178 +276,101 @@
 					</ul>
 					</div>
 				</div>
-				<div class="account_box_main define_float">
-					<div class="g-profile-edit a_boxes_main define_float">
-						<div class="g-profile-edit_inner">
-							<div class="g-profile-img g-profile-img-first">
-								<span>M</span>
-								<div class="g-profile-upload-img matthew-profile-upload">
-									<label for="upload" class="form-label btn btn-primary gt-btn-custom"><img src="assets/images/camera.svg" alt="upload" class="img-fluid" /></label><input class="d-none" type="file" id="upload" accept="images/*" />
-								</div>
-							</div>
-							<div class="error" style="text-align: center; padding-top: 10px;"></div>
+				<div class="contact_detail_outer define_float">
+					<div class="contact_breadcrumbs define_float">
+						<ul>
+							<li><a href="javascriipt:void(0);"><img src="assets/images/bread_arrow.svg" alt="arrow-icon" > My Contact</a></li>
+							<li>/</li>
+							<li class="active">Contact Details</li>
+						</ul>
+					</div>
+					<div class="contact_detail_profile define_float">
+						<div class="contact_profile_img">
+							<img src="assets/images/profile-img.png" alt="img" >
 						</div>
-						<div class="g-profile-name profile-main-title profile_name_section">
-							<div class="profile_name_inner_section">
-								<h6 class="profile_name_org">Matthew Vetheca</h6>
-								<a href="javascript:void(0);" p_c="profile_name_section" class="edit_pro"><img src="assets/images/pen.svg" alt="edit" class="img-fluid" /></a>
-							</div>
-							<p>California, United State</p>
-							<div class="profile_address_inner_section"><span></span></div>
+						<div class="contact_profile_content">
+							<h3>Matthew Vatican</h3>
 						</div>
 					</div>
-					<div class="a_boxes_main define_float">
-						<div class="a_boxes_title define_float">
-							<h4>Company Information <img src="assets/images/pen.svg" alt="edit" class="img-fluid" /></h4>
-						</div>
-						<div class="a_boxes_info define_float">
-							<div class="a_boxes_dtl define_float">
-								<label>Logo:</label>
-								<div class="a_boxes_desc">
-									<input id="demo1" class="demo1" type="file" multiple placeholder="Upload logo" name="demo1[]" />
+					<div class="note_outer define_float">
+						<div class="contact_detail_left">
+							<div class="contact_note define_float">
+								<div class="contact_note_heading define_float">
+									<h3>Write a Note</h3>
+								</div>	
+								<div class="note_textarea define_float">
+									<textarea>Leave an internal note here</textarea>
 								</div>
 							</div>
-							<div class="a_boxes_dtl define_float">
-								<label>Company description:</label>
-								<div class="a_boxes_desc">
-									<p>We're constantly working to curate a perfect, on-trend gift collection that will make everyone smile. We partner with dozens of local businesses and values-driven companies making a difference in the world - from minority and LGBTQ-owned companies to climate sustainability initiatives.</p>
+							<div class="contact_note contact_address define_float">
+								<div class="contact_note_heading define_float">
+									<h3>Contact Details</h3>
+									<a href="javascript:void(0);"><img src="assets/images/edit-icon.svg" alt="img" > Edit</a>
 								</div>
-							</div>
-						</div>
-					</div>
-					<div class="a_boxes_main a-contact-edit  define_float">
-						<div class="a_boxes_title define_float">
-							<h4>Contact Information <img src="assets/images/pen.svg" alt="edit" class="img-fluid" /></h4>
-						</div>
-						<div class="a_boxes_info define_float">
-							<div class="a_boxes_dtl define_float">
-								<label>Contact name:</label>
-								<div class="a_boxes_desc">
-									<p>Matthew Vattican</p>
-								</div>
-							</div>
-							<div class="a_boxes_dtl define_float">
-								<label>Contact email:</label>
-								<div class="a_boxes_desc">
-									<p>matthew@gmail.com</p>
-								</div>
-							</div>
-							<div class="a_boxes_dtl define_float">
-								<label>Contact mobile:</label>
-								<div class="a_boxes_desc">
-									<p>+1  23568 56894</p>
+								<div class="contact_note_address define_float">
+									<ul>
+										<li><a href="tel: 0370678237"><img src="assets/images/tel-icon.svg" alt="img" > 03 7067 8237</a></li>
+										<li><a href="mailto: support@kadobusiness.com.au"><img src="assets/images/mail-icon.svg" alt="img" > support@kadobusiness.com.au</a></li>
+									</ul>
 								</div>
 							</div>
 						</div>
-					</div>
-					<div class="a_boxes_main a-payment-edit  define_float">
-						<div class="a_boxes_title define_float">
-							<h4>Payments</h4>
-						</div>
-						<div class="a_boxes_info define_float">
-							<div class="a_boxes_dtl define_float">
-								<label>Set up automatic gift payments</label>
-								<div class="a_boxes_desc">
-									<div class="allow_gift_inner define_float">
-										<h3>Automatic Payments</h3>
-										<label class="toggleSwitch large" onclick="">
-											<input type="checkbox" />
-											<span>
-												<span></span>
-												<span></span>
-											</span>
-											<a></a>
-										</label>
+						<div class="contact_detail_right">
+							<div class="contact_gift define_float">
+								<div class="contact_gift_heading define_float">
+									<h3>Gifts Sent</h3>
+								</div>
+								<div class="contact_gift_content define_float">
+									<div class="contact_gift_main define_float">
+										<div class="contact_gift_left">
+											<img src="assets/images/gift-icon.svg" alt="img"> 
+											<div class="contact_gift_outer">
+												<h4>Added Manually</h4>
+												<p>3:02 PM ET</p>
+											</div>
+										</div>
+										<div class="contact_gift_right">
+											<p>September 14th</p>
+										</div>
 									</div>
-								</div>
-							</div>
-							<div class="a_boxes_dtl a_note_dtl define_float">
-								<div class="a_boxes_desc">
-									<p><strong>Note:</strong> Selecting this means we’ll charge your card after your gifts have been accepted. Otherwise you may pay manually each time a gift is accepted. Gifts are shipped following payment.</p>
-								</div>
-							</div>
-						</div>
-					</div>
-					<div class="a_boxes_main a-gift-edit  define_float">
-						<div class="a_boxes_title define_float">
-							<h4>Gift Send</h4>
-						</div>
-						<div class="a_boxes_info define_float">
-							<div class="a_boxes_dtl define_float">
-								<label>How do you want us to send your gifts?</label>
-								<div class="a_boxes_desc">
-									<div class="g-finder-second-input-main">
-										<div class="g-finder-second-input define_float">
-											<div class="finder-second-age-input define_float">
-												<label class="form-label define_float finder-first-label" for="ageradio">Use your email<input type="radio" class="form-check-input finder-second-age" name="ageradio" id="ageradio" value="12 - 18" checked /></label>
-											</div>
-											<div class="finder-second-age-input define_float">
-												<label class="form-label define_float finder-second-label">Send from gift@kado.io<input type="radio" class="form-check-input finder-second-age" name="ageradio" id="ageradioone" value="18 - 30" /></label>
+									<div class="contact_gift_main define_float">
+										<div class="contact_gift_left">
+											<img src="assets/images/gift-icon.svg" alt="img"> 
+											<div class="contact_gift_outer">
+												<h4>Added Manually</h4>
+												<p>3:02 PM ET</p>
 											</div>
 										</div>
-										<div class="ques_three_boxes define_float">
-											<div class="ques_three_main">
-												<a href="javascript:void(0);">
-													<div class="ques_three_image define_float">
-														<img src="assets/images/gmail_new.svg" />
-													</div>
-													<h3>Gmail</h3>
-												</a>
-											</div>
-											<div class="ques_three_main">
-												<a href="javascript:void(0);">
-													<div class="ques_three_image define_float">
-														<img src="assets/images/micro.svg" />
-													</div>
-													<h3>Microsoft Office 365</h3>
-												</a>
+										<div class="contact_gift_right">
+											<p>September 14th</p>
+										</div>
+									</div>
+									<div class="contact_gift_main define_float">
+										<div class="contact_gift_left">
+											<img src="assets/images/gift-icon.svg" alt="img"> 
+											<div class="contact_gift_outer">
+												<h4>Added Manually</h4>
+												<p>3:02 PM ET</p>
 											</div>
 										</div>
-										<div class="forward_outer define_float">
-											<label>Forward your email to</label>
-											<input type="text" placeholder="Enter email address" />
+										<div class="contact_gift_right">
+											<p>September 14th</p>
+										</div>
+									</div>
+									<div class="contact_gift_main define_float">
+										<div class="contact_gift_left">
+											<img src="assets/images/gift-icon.svg" alt="img"> 
+											<div class="contact_gift_outer">
+												<h4>Added Manually</h4>
+												<p>3:02 PM ET</p>
+											</div>
+										</div>
+										<div class="contact_gift_right">
+											<p>September 14th</p>
 										</div>
 									</div>
 								</div>
-							</div>
-						</div>
-					</div>
-					<div class="a_boxes_main a-swap-edit  define_float">
-						<div class="a_boxes_title define_float">
-							<h4>Swap Gifts</h4>
-						</div>
-						<div class="a_boxes_info define_float">
-							<div class="a_boxes_dtl define_float">
-								<label>Allow recipients to swap gifts?</label>
-								<div class="a_boxes_desc">
-									<div class="allow_gift_inner define_float">
-										<h3>Swap Gifts (Recommended)</h3>
-										<label class="toggleSwitch large" onclick="">
-											<input type="checkbox" checked/>
-											<span>
-												<span></span>
-												<span></span>
-											</span>
-											<a></a>
-										</label>
-									</div>
-								</div>
-							</div>
-						</div>
-					</div>
-					<div class="a_boxes_main a-password-edit  define_float">
-						<div class="a_boxes_title define_float">
-							<h4>Password Settings <img src="assets/images/pen.svg" alt="edit" class="img-fluid" /></h4>
-							<p>A secure password helps protect your Google Account</p>
-						</div>
-						<div class="a_boxes_info define_float">
-							<div class="a_boxes_dtl define_float">
-								<label>Password:</label>
-								<div class="a_boxes_desc">
-									<p>***************</p>
-									<p>Last changed Feb 15, 2021</p>
-								</div>
-							</div>
+							</div>	
 						</div>
 					</div>
 				</div>
@@ -461,6 +383,5 @@
     <script src="assets/js/jquery-3.6.0.min.js"></script>
     <script src="assets/js/bootstrap.min.js"></script>
     <script src="assets/js/b2b_custom.js"></script>
-	<script src="assets/js/file_upload.js"></script>
 </body>
 </html>

@@ -1198,6 +1198,49 @@ a.view_all_toggle svg {
 .contact_gift:has(.contact_gift_content.open) .contact_gift_heading a svg {
   transform: rotate(180deg);
 }
+.payment_inner_main {
+  background: #FFFFFF;
+  box-shadow: 0px 2px 5px rgba(10, 72, 107, 0.07);
+  border-radius: 10px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-top: 30px;
+  padding: 30px;
+}
+.debit_payment_noti {
+  display: flex;
+  align-items: center;
+}
+span.debit_icon {
+  background-color: #FF385C;
+  width: 73px;
+  height: 73px;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-right: 20px;
+}
+.debi_text h3 {
+  font-family: 'Lato';
+  font-style: normal;
+  font-weight: 700;
+  font-size: 30px;
+  line-height: 36px;
+  letter-spacing: -0.03em;
+  color: #414141;
+  margin-bottom: 7px;
+}
+.debi_text p {
+  font-family: 'Lato';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 24px;
+  color: #414141;
+  margin: 0;
+}
 
 
 

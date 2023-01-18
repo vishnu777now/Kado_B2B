@@ -38,6 +38,9 @@ $(document).ready(function(){
 		  $(this).addClass('has-value');
 		}
 	});
+	$('.view_all_toggle').on('click', function () {
+        $(".contact_gift_content").toggleClass('open');
+    });
 
 
 	$(".finder-second-age-input label").click(function () {

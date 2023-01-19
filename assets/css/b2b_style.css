@@ -1261,7 +1261,119 @@ a.pagination-arrow:hover {
 a.pagination-arrow:hover img {
   filter: brightness(0) invert(1);
 }
-
+.payment_table_main {
+  background: #FFFFFF;
+  box-shadow: 0px 2px 5px rgba(10, 72, 107, 0.07);
+  border-radius: 10px;
+  margin-top: 30px;
+}
+.payment_table_header {
+  padding: 20px 33px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.payment_table_header h4 {
+  font-weight: 700;
+  font-size: 22px;
+  line-height: 28px;
+  letter-spacing: -0.03em;
+  color: #414141;
+  margin: 0;
+}
+.sort_by_field {
+  display: flex;
+  align-items: center;
+}
+.sort_by_field h5 {
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 20px;
+  letter-spacing: -0.03em;
+  color: #414141;
+  margin: 0 15px 0 0;
+}
+span.sort_by_sel {
+  background: #FFFFFF;
+  border: 1px solid #E2E2E2;
+  border-radius: 8px;
+  padding: 18px 20px;
+  cursor: pointer;
+  display: inline-block;
+}
+span.sort_by_sel svg {
+  margin-left: 10px;
+}
+.payment_tabl_body table p svg {
+  margin-right: 9px;
+}
+.payment_tabl_body table th p span {
+  width: 100%;
+  float: left;
+}
+.payment_tabl_body table td span.payment_tag {
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 19px;
+  width: 92px;
+  height: 36px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 8px;
+}
+span.payment_tag.paid {
+  background-color: #E8FAEA;
+  color: #15CC41;
+}
+span.payment_tag.unpaid {
+  background-color: #FFEAEB;
+  color: #FF3245;
+}
+span.payment_tag.pending {
+  background-color: #FFF8E6;
+  color: #EFB918;
+}
+.sort_dropdown {
+  position: relative;
+  cursor: pointer;
+}
+ul.default_sort_drop {
+  background-color: #fff8f8;
+  width: 100%;
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  border: 1px solid #E2E2E2;
+  border-radius: 8px;
+}
+span.default_sort_drop_main {
+  width: 100%;
+  float: left;
+  padding-top: 4px;
+  position: absolute;
+  left: 0;
+  top: 40px;
+  z-index: 99;
+  display: none;
+}
+ul.default_sort_drop li {
+  padding: 10px 20px;
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 19px;
+}
+ul.default_sort_drop li:hover {
+  background-color: #ffeaeb;
+  color: #ff326b;
+}
+span.default_sort_drop_main.open {
+  display: block;
+}
+.payment_tabl_body .my_contact_table.define_float {
+  padding-top: 20px;
+  border-top: 1px solid #E2E2E2;
+}
 
 @media only screen {
   .toggleSwitch {     display: inline-block;     height: 18px;     position: relative;     overflow: visible;     padding: 0;     margin-left: 50px;     cursor: pointer;     width: 40px   }

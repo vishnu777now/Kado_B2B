@@ -41,6 +41,10 @@ $(document).ready(function(){
 	$('.view_all_toggle').on('click', function () {
         $(".contact_gift_content").toggleClass('open');
     });
+	$('.sort_by_sel').on('click', function () {
+        $(".default_sort_drop_main").toggleClass('open');
+    });
+
 
 
 	$(".finder-second-age-input label").click(function () {

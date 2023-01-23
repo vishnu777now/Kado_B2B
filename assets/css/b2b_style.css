@@ -2245,6 +2245,67 @@ p.version-details-descriotion {
   justify-content: center;
   margin: 30px 0 0 0;
 }
+.contact_info_edit {
+  display: flex;
+  align-items: center;
+}
+.contact_info_edit h3 {
+  margin: 0;
+  display: flex;
+  align-items: center;
+}
+.contact_info_edit {
+  display: flex;
+  align-items: center;
+  margin-bottom: 22px;
+}
+.contact_info_edit h3 img {
+  margin-right: 22px;
+}
+.contact_info_edit input {
+  font-style: normal;
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 25px;
+  color: #FF385C;
+  text-decoration: none;
+  border: 0;
+  width: 100%;
+}
+.contact_info_detail_box_button button {
+  padding: 14px 22px;
+  background-color: #FF385C;
+  border: 0;
+  font-family: 'Lato';
+  font-style: normal;
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 19px;
+  text-align: center;
+  color: #FFF4F6;
+  border-radius: 8px;
+  margin-top: 10px;
+  transition: all ease .5s;
+}
+.note_textarea.define_float button {
+  padding: 14px 22px;
+  background-color: #FF385C;
+  border: 0;
+  font-family: 'Lato';
+  font-style: normal;
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 19px;
+  text-align: center;
+  color: #FFF4F6;
+  border-radius: 8px;
+  margin-top: 10px;
+  transition: all ease .5s;
+}
+.note_textarea.define_float button:hover, .contact_info_detail_box_button button:hover {
+  background-color: #FFF4F6;
+  color: #ff385c;
+}
 
 @media only screen {
   .toggleSwitch {     display: inline-block;     height: 18px;     position: relative;     overflow: visible;     padding: 0;     margin-left: 50px;     cursor: pointer;     width: 40px   }
@@ -2481,7 +2542,7 @@ div.add_contact_modal .modal-body { flex: none; padding: 20px 30px 30px 30px; }
 .contact_note { padding: 15px 40px 26px 40px; background: #FFFFFF; box-shadow: 0px 2px 5px rgba(10, 72, 107, 0.07); border-radius: 10px; margin: 0 0 20px 0; }
 .contact_note_heading h3 { float: left; width: auto; margin: 0; padding: 0; font-style: normal; font-weight: 700; font-size: 22px; line-height: 32px; letter-spacing: -0.03em; color: #414141; }
 .contact_note_heading { margin: 0 0 10px 0;     display: -webkit-box; display: -moz-box; display: -ms-flexbox; display: -webkit-flex; display: flex;     -webkit-box-pack: justify; -moz-box-pack: justify; -webkit-justify-content: space-between; -ms-flex-pack: justify; justify-content: space-between;}
-.note_textarea textarea { float: left;outline: none; width: 100%; margin: 0; padding: 20px 21px; /**height: 90px;**/ resize: none; background: #FFFFFF; border: 1px solid #E2E2E2; border-radius: 8px; font-style: normal; font-weight: 500; font-size: 16px; line-height: 19px; letter-spacing: -0.03em; color: #959595; }
+.note_textarea textarea, textarea.company_info_descrip { float: left;outline: none; width: 100%; margin: 0; padding: 20px 21px; /**height: 90px;**/ resize: none; background: #FFFFFF; border: 1px solid #E2E2E2; border-radius: 8px; font-style: normal; font-weight: 700; font-size: 18px; line-height: 28px; letter-spacing: -0.03em; color: #414141; }
 .contact_note.contact_address { margin: 0; padding: 15px 30px 30px 40px; }
 /*dashboard new*/
 

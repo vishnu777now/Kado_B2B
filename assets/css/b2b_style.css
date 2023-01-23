@@ -1518,6 +1518,24 @@ span.gt-or-devider {
   float: left;
   display: flex;
 }
+
+.form-control {
+  display: block;
+  width: 100%;
+  padding: .375rem .75rem;
+  font-size: 1rem;
+  font-weight: 400;
+  line-height: 1.5;
+  color: #212529;
+  background-color: #fff;
+  background-clip: padding-box;
+  border: 1px solid #ced4da;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+  border-radius: .25rem;
+  transition: border-color .15s ease-in-out,box-shadow .15s ease-in-out;
+}
 .form-control {
   background-color: #FFFFFF;
   border: 1px solid #E2E2E2;
@@ -1569,7 +1587,7 @@ span.gt-edit-choose-icon {
   text-align: left;
   justify-content: space-between;
   flex-direction: initial;
-  padding: 0;
+  padding: 0; 
 }
 .add_recipient_btn {
   display: flex;
@@ -1577,7 +1595,7 @@ span.gt-edit-choose-icon {
   align-items: center;
   margin-top: 20px;
 }
-.add_recipient_btn a {
+.add_recipient_buton {
   height: 100%;
   background-color: #FFF4F6;
   border-radius: 8px;
@@ -1590,9 +1608,9 @@ span.gt-edit-choose-icon {
   text-align: center;
   color: #FF385C;
   text-decoration: none;
-  display: flex;
+  display: inline-flex;
   align-items: center;
-}
+} 
 .add_recipient_btn .kwt-file .kwt-file__drop-area {
   background: #F6F6F6;
   border-radius: 8px;
@@ -1910,22 +1928,6 @@ div.hover_card_swipe {
 .recipients_enter_content h3 svg {
   margin: 0 6px 0px 0;
 }
-.recipients_enter_content a {
-  height: 100%;
-  background-color: #FFF4F6;
-  border-radius: 8px;
-  padding: 15px 20px;
-  font-family: 'Lato';
-  font-style: normal;
-  font-weight: 700;
-  font-size: 16px;
-  line-height: 19px;
-  text-align: center;
-  color: #FF385C;
-  text-decoration: none;
-  display: inline-flex;
-  align-items: center;
-}
 .recipients_enter_content a svg {
   margin-right: 10px;
 }
@@ -2170,23 +2172,6 @@ p.version-details-descriotion {
   border-radius: 10px 0 0 10px;
   border-right: none;
 }
-.form-control {
-  display: block;
-  width: 100%;
-  padding: .375rem .75rem;
-  font-size: 1rem;
-  font-weight: 400;
-  line-height: 1.5;
-  color: #212529;
-  background-color: #fff;
-  background-clip: padding-box;
-  border: 1px solid #ced4da;
-  -webkit-appearance: none;
-  -moz-appearance: none;
-  appearance: none;
-  border-radius: .25rem;
-  transition: border-color .15s ease-in-out,box-shadow .15s ease-in-out;
-}
 .shipping-form-input .form-control {
   padding: 0 19px;
   color: #000;
@@ -2305,6 +2290,52 @@ p.version-details-descriotion {
 .note_textarea.define_float button:hover, .contact_info_detail_box_button button:hover {
   background-color: #FFF4F6;
   color: #ff385c;
+}
+.send_gift_main {
+  background: #FFFFFF;
+  box-shadow: 0px 2px 5px rgb(10 72 107 / 7%);
+  border-radius: 15px;
+  padding: 30px;
+  margin-top: 30px;
+  width: 100%;
+  float: left;
+}
+.csv_input .kwt-file .kwt-file__drop-area {
+  border: 0;
+  display: flex;
+  text-align: left;
+  justify-content: space-between;
+  flex-direction: initial;
+  padding: 0;
+}
+.csv_input .kwt-file .kwt-file__drop-area {
+  background: #F6F6F6;
+  border-radius: 8px;
+  height: 54px;
+  padding: 0 29px 0 32px;
+}
+.csv_input .kwt-file__drop-area span.kwt-file__choose-file {
+  margin: 0;
+  background-color: transparent;
+  padding: 0;
+  width: auto;
+  height: auto;
+  margin-right: 10px;
+}
+.csv_input .kwt-file {
+  max-width: 100%;
+  margin: 0;
+  width: 268px;
+}
+.csv_input .kwt-file .kwt-file__drop-area .kwt-file__msg {
+  font-size: 16px;
+  line-height: 19px;
+}
+.csv_input .kwt-file .kwt-file__drop-area span.kwt-file__choose-file path {
+  fill: #000;
+}
+.csv_input {
+  margin-bottom: 5px;
 }
 
 @media only screen {

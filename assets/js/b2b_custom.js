@@ -113,4 +113,21 @@ $('.edit_contact_details').on('click', function(e){
 	$('.contact_info_details').toggle();
 	$('.contact_info_details_form').toggle();
 });
+
+$('.contact_modal_btn a').on('click', function(e){ 
+	e.preventDefault(); 
+	console.log('contact_modal_btn'); 
+	var full_name_mode = $('form.contact_form_7 input.full_name_mode').val();
+	var phn_number_mode = $('form.contact_form_7 input.phn_number_mode').val();
+	var email_address_mode = $('form.contact_form_7 input.email_address_mode').val();
+	
+	$('.my_contact_table tbody').prepend($('<tr><td><p>'+full_name_mode+'</p></td><td><span>'+email_address_mode+'</span></td><td><span>'+phn_number_mode+'</span></td><td><span>02 September 2022</span></td><td><a href="contact-details.html">View</a></td></tr>'));
+	$('#add-contact').modal('hide');
+	$(':input','.contact_form_7')
+  .not(':button, :submit, :reset, :hidden')
+  .val('')
+  .prop('checked', false)
+  .prop('selected', false);
+});
+
 });

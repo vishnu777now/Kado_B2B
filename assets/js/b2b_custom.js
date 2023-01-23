@@ -102,9 +102,15 @@ function add_camp_recipt() {
 }
 
 $('.add_new_camp_recipt').on('click', function(e){ 
-e.preventDefault(); 
-console.log('add_camp_recipt'); 
-add_camp_recipt();
- });
+	e.preventDefault(); 
+	console.log('add_camp_recipt'); 
+	add_camp_recipt();
+});
 
+$('.edit_contact_details').on('click', function(e){ 
+	e.preventDefault(); 
+	console.log('edit_contact_details'); 
+	$('.contact_info_details').toggle();
+	$('.contact_info_details_form').toggle();
+});
 });

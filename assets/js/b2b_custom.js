@@ -112,6 +112,10 @@ $('.edit_contact_details').on('click', function(e){
 	console.log('edit_contact_details'); 
 	$('.contact_info_details').toggle();
 	$('.contact_info_details_form').toggle();
+	var cont_info_ph = $('.cont_info_ph a').attr('cont_info');
+	var cont_info_email = $('.cont_info_email a').attr('cont_info');
+	$('.contact_info_edit_ph').attr('placeholder',cont_info_ph);
+	$('.contact_info_edit_email').attr('placeholder',cont_info_email);
 });
 
 $('.contact_modal_btn a').on('click', function(e){ 

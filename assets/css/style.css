@@ -1,3 +1,9 @@
+* {
+  transition: all ease .5s;
+}
+a {
+  transition: all ease .5s;
+}
 header {
   padding: 0 106px 0 118px;
 }
@@ -495,4 +501,22 @@ section.banner.define-float form button:hover {
 }
 li.gt-footer-menu-item a:hover {
   color: #ff385c;
+}
+.collection-right-img {
+  text-align: right;
+}
+.banner-image img {
+  width: 100%;
+}
+a.nav-link.send-gift-button:hover {
+  background-color: #eb0f37;
+}
+a.nav-link {
+  transition: all ease .5s;
+}
+a.gt-site-social-link:hover svg {
+  color: #ff385c;
+}
+a.gt-site-social-link:hover {
+  background-color: #eb0f37;
 }

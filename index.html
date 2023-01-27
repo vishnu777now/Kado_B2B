@@ -1,0 +1,685 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="assets/images/favicon.png" type="image/x-icon">
+    <title>Main</title>
+    <!-- Link All CSS -->
+    <link rel="stylesheet" href="assets/css/bootstrap.min.css" />
+	<link rel="stylesheet" href="assets/css/slick.css">
+	<link rel="stylesheet" type="text/css" href="assets/css/emojionearea.min.css" media="screen">
+	<link rel="stylesheet" href="assets/css/file_upload.css" />
+    <link rel="stylesheet" href="assets/css/style.css" />
+	<link href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&display=swap" rel="stylesheet" />
+	<style>
+		html,body{height:100%;}
+	</style>
+</head>
+<body class="dashboard_body">
+<header>
+	<nav class="navbar navbar-expand-lg navbar-light">
+		<div class="container-fluid">
+		  <a class="navbar-brand" href="#">
+			<img src="assets/main-image/b-b-logo.png">
+		  </a>
+		  <div class="main_page_nav">
+			<button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+				<span class="navbar-toggler-icon"></span>
+			</button>
+			<div class="collapse navbar-collapse" id="navbarSupportedContent">
+				<ul class="navbar-nav">
+				<li class="nav-item">
+					<a class="nav-link browse-gift-nv" aria-current="page" href="#">Browse Gifts</a>
+				</li>
+				<li class="nav-item">
+					<a class="nav-link" href="#">Create Account</a>
+				</li>
+				</ul>
+			</div>
+			<a class="nav-link send-gift-button" href="#" tabindex="-1">
+				<span class="send-gift-icon">
+					<img src="assets/main-image/send-btn-icon.png">
+				</span>
+				Send Test Gift
+			</a>
+		  </div>
+		</div>
+	</nav>
+</header>
+<section class="banner define-float">
+	<div class="container">
+		<div class="row">
+			<div class="col-md-6">
+				<div class="kado-tag">
+					KADO BUSINESS
+				</div>
+				<h1>
+					Business Gifting Made Easy
+				</h1>
+				<p>
+					Make your business stand out. Send thoughtful, personalised gifts at any scale.
+				</p>
+				<h5>
+					No addresses, no logistics, no headaches.
+				</h5>
+				<form>
+					<input type="email" required="" name="your-email" placeholder="What is your work email?">
+					<button>Get Started</button>
+				</form>
+			</div>
+		</div>
+	</div>
+	<div class="banner-image">
+		<img src="assets/main-image/banner-image.png">
+	</div>
+</section>
+<section class="process">
+	<div class="container">
+		<div class="section-head">
+			<h6>Process</h6>
+			<h2>Sending The Perfect Gift is as Easy as…</h2>
+		</div>
+		<div class="row">
+			<div class="col-md-4">
+				<div class="process-box">
+					<span class="process-icon">
+						<svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+							<path fill-rule="evenodd" clip-rule="evenodd" d="M1.49997 0.792313C1.39935 0.816269 1.22207 0.926472 1.10228 1.03188C1.07554 1.05565 1.05075 1.0744 1.02779 1.09176C1.00728 1.10727 0.988222 1.12168 0.970516 1.1376C0.737773 1.3468 0.738572 1.81583 0.749878 8.45003C0.750729 8.94899 0.751638 9.48283 0.752513 10.0541L0.766887 18.3911L0.872297 18.5875C1.00166 18.8319 1.21728 19.0187 1.45205 19.0858C1.57663 19.1241 4.17356 19.1337 10.067 19.1241L18.5046 19.1098L18.6914 18.9804C18.7921 18.9085 18.931 18.7696 18.9981 18.669L19.1179 18.4917L19.1322 10.0588C19.1418 4.16544 19.1322 1.56852 19.0939 1.44394C19.0268 1.20916 18.84 0.993549 18.5956 0.864183L18.3992 0.758772L10.0382 0.749189C4.63353 0.744398 1.61496 0.758772 1.49997 0.792313ZM17.1199 9.94385L17.1055 17.0974L9.95675 17.1118L2.80322 17.1213V9.95822V2.79511H9.96634H17.1294L17.1199 9.94385ZM8.93716 7.17947V8.92833H7.18831H5.43945V9.95847V10.9886H7.18831H8.93716V12.7375V14.4863H9.96731H10.9975V12.7375V10.9886H12.7463H14.4952V9.95847V8.92833H12.7463H10.9975V7.17947V5.43062H9.96731H8.93716V7.17947ZM20.1957 6.86766V5.86147V4.85528H21.3217C22.232 4.85528 22.486 4.86966 22.6297 4.92715C22.8549 5.02298 23.0034 5.16672 23.1328 5.40629L23.2382 5.59795L23.2526 13.887C23.2622 19.8331 23.2526 22.248 23.2143 22.4253C23.1759 22.5978 23.1041 22.7367 22.9699 22.89C22.924 22.9416 22.8965 22.9861 22.862 23.0242C22.6344 23.2768 22.1047 23.2571 13.9429 23.2446L5.60595 23.2302L5.41429 23.1248C5.17472 22.9954 5.03098 22.8469 4.93515 22.6217C4.87766 22.478 4.86328 22.224 4.86328 21.3137V20.1877H5.86947H6.87566V20.6908V21.1939H14.0388H21.2019V14.0308V6.86766H20.6988H20.1957Z" fill="white"/>
+						</svg>	
+					</span>
+					<h3>Create a Gift Campaign</h3>
+					<p>
+						Whether it’s for one or 100 people, set up a campaign in under 5 minutes. We only need your recipients’ names and email addresses - no postal addresses required.
+					</p>
+				</div>
+			</div>
+			<div class="col-md-4">
+				<div class="process-box">
+					<span class="process-icon">
+						<svg width="30" height="20" viewBox="0 0 30 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+							<path fill-rule="evenodd" clip-rule="evenodd" d="M2.22269 0.461371C0.971175 1.12006 0.949219 1.33963 0.949219 9.99045C0.949219 18.6852 0.971175 18.8828 2.2666 19.5415C3.23268 20.0465 26.7699 20.0465 27.736 19.5415C29.0314 18.8828 29.0534 18.6852 29.0534 9.99045C29.0534 1.29571 29.0314 1.09811 27.736 0.439415C26.7919 -0.0436247 3.1229 -0.0436247 2.22269 0.461371ZM9.07308 3.84266V5.81873L8.2607 5.3796C6.85549 4.63309 5.31854 4.94048 4.68181 6.12612C4.44029 6.5872 4.22072 6.69699 3.54007 6.69699H2.70573V4.43548C2.70573 3.18396 2.7716 2.08615 2.85943 2.02028C2.92529 1.93245 4.37442 1.86658 6.0431 1.86658H9.07308V3.84266ZM27.253 4.3257L27.3188 6.69699H21.5004C15.8576 6.69699 15.66 6.67503 15.4404 6.2359C15.0891 5.62112 13.9254 4.94048 13.135 4.94048C12.7837 4.94048 12.147 5.13808 11.7518 5.3796C11.3566 5.62112 10.9833 5.81873 10.9394 5.81873C10.8735 5.81873 10.8296 4.91852 10.8296 3.84266V1.86658L19.0193 1.91049L27.1871 1.97636L27.253 4.3257ZM7.95331 7.11416L8.45831 7.4435L7.84353 7.9485C6.85549 8.73893 5.99919 8.49741 5.99919 7.42155C5.99919 6.49938 6.81158 6.36764 7.95331 7.11416ZM14.0791 7.4435C14.167 7.90459 13.7498 8.4535 13.2887 8.4535C13.1131 8.4535 12.63 8.23393 12.2128 7.97046L11.4444 7.50937L12.2787 7.00438C13.0252 6.56525 13.1789 6.52134 13.5741 6.78481C13.8157 6.93851 14.0352 7.2459 14.0791 7.4435ZM4.9892 9.22197C5.51615 9.79284 5.91136 9.99045 6.41636 9.99045C7.2507 9.99045 7.27266 10.1881 6.52614 11.2859C5.86745 12.3178 5.88941 13.1522 6.59201 13.24C6.96527 13.3059 7.2507 13.0643 7.79961 12.2739C7.96708 12.0413 8.14243 11.793 8.30061 11.5689L8.30065 11.5689C8.51575 11.2642 8.69909 11.0045 8.78765 10.8907C9.00722 10.6052 9.05113 11.3298 9.07308 14.4256V18.3339H6.30658C4.79159 18.3339 3.36442 18.2241 3.1229 18.1143C2.72769 17.8947 2.70573 17.6093 2.70573 13.1741V8.4535H3.49616C4.08898 8.4535 4.44029 8.62915 4.9892 9.22197ZM27.2969 13.1741C27.2969 17.6093 27.2749 17.8947 26.8797 18.1143C26.5943 18.246 23.6082 18.3339 18.6461 18.3339H10.8296V14.3817C10.8296 12.208 10.8735 10.4296 10.9174 10.4296C10.9613 10.4296 11.4224 11.0663 11.9274 11.8567C12.8496 13.2619 13.3326 13.5474 13.8596 13.0204C14.2548 12.6252 14.1889 12.23 13.4644 11.198L13.4643 11.198C13.113 10.6711 12.8057 10.21 12.8057 10.1661C12.8057 10.1222 13.0472 10.0563 13.3546 10.0344C14.1889 9.96849 15.177 9.39762 15.3307 8.89263C15.4624 8.47546 15.66 8.4535 21.3906 8.4535H27.2969V13.1741ZM17.4832 12.0982C17.4174 12.2958 17.4393 12.6251 17.5711 12.8227C17.7687 13.1081 18.3834 13.174 21.5232 13.2399C25.5412 13.3058 25.9584 13.196 25.651 12.186C25.5193 11.7688 25.3436 11.7468 21.5671 11.7468C18.12 11.7468 17.615 11.7908 17.4832 12.0982ZM17.5711 16.1162C17.4393 15.9186 17.4174 15.5892 17.4832 15.3916C17.615 15.0842 18.12 15.0403 21.5671 15.0403C25.3436 15.0403 25.5193 15.0623 25.651 15.4794C25.9584 16.4894 25.5412 16.5992 21.5232 16.5333C18.3834 16.4675 17.7687 16.4016 17.5711 16.1162Z" fill="white"/>
+						</svg>
+					</span>
+					<h3>Select a Gift & Leave a Card</h3>
+					<p>
+						Select from our curated collection of gifts and support the dozens of local Australian brands partners.
+					</p>
+				</div>
+			</div>
+			<div class="col-md-4">
+				<div class="process-box">
+					<span class="process-icon">
+						<svg width="30" height="30" viewBox="0 0 30 30" fill="none" xmlns="http://www.w3.org/2000/svg">
+							<path fill-rule="evenodd" clip-rule="evenodd" d="M10.2831 0.806136C9.71702 1.01841 8.8915 1.84394 7.92446 3.14119C7.12252 4.20257 6.83949 4.39126 5.613 4.74506C3.06567 5.45265 2.26373 6.53762 2.26373 9.29723C2.26373 10.8068 2.19297 10.9954 1.20235 12.4106C-0.283595 14.5334 -0.283595 15.524 1.20235 17.6468C2.19297 19.062 2.26373 19.2507 2.26373 20.7602C2.26373 23.5198 3.06567 24.6048 5.613 25.3124C6.72155 25.6426 7.14611 25.8784 7.64142 26.5624C9.71702 29.4164 10.5661 29.7702 13.255 28.9447L15.0004 28.3786L16.7458 28.9447C19.4346 29.7702 20.2837 29.4164 22.3593 26.5624C22.8546 25.8784 23.2792 25.6426 24.3877 25.3124C26.9351 24.6048 27.737 23.5198 27.737 20.7602C27.737 19.2507 27.8078 19.062 28.7984 17.6468C30.2843 15.524 30.2843 14.5334 28.7984 12.4106C27.8078 10.9954 27.737 10.8068 27.737 9.29723C27.737 6.53762 26.9351 5.45265 24.3877 4.74506C23.2792 4.41485 22.8546 4.17899 22.3593 3.49498C20.2837 0.641032 19.4346 0.287236 16.7222 1.13635L14.9768 1.67883L13.3729 1.15993C11.7926 0.641032 10.9671 0.546687 10.2831 0.806136ZM12.8304 3.4714C14.4343 4.08464 15.4721 4.06105 17.3354 3.42422L18.8449 2.88174L19.4582 3.70726C20.9677 5.7121 21.9112 6.46686 23.4207 6.89142C24.2462 7.12728 25.001 7.4339 25.1189 7.57542C25.2368 7.71694 25.3784 8.73115 25.402 9.83971C25.4963 11.7738 25.5435 11.8917 26.5105 13.2361C27.053 14.0145 27.5011 14.8164 27.5011 15.0287C27.5011 15.241 27.053 16.0429 26.5105 16.8213C25.5199 18.1657 25.4963 18.2836 25.4255 20.2649C25.3784 21.4442 25.2133 22.4112 25.0717 22.5292C24.9066 22.6471 24.1519 22.9301 23.3735 23.166C21.9348 23.567 21.1564 24.2038 19.5761 26.2322L18.8449 27.1757L17.3354 26.6332C15.4485 25.9728 14.5522 25.9728 12.6653 26.6332L11.1558 27.1757L10.5425 26.3502C9.0566 24.3925 8.06598 23.567 6.62721 23.166C5.84886 22.9301 5.0941 22.6471 4.92899 22.5292C4.78747 22.4112 4.62237 21.4442 4.5752 20.2649C4.50444 18.2836 4.48085 18.1657 3.49022 16.8213C2.94774 16.0429 2.4996 15.241 2.4996 15.0287C2.4996 14.8164 2.94774 14.0145 3.49022 13.2361C4.45726 11.8917 4.50444 11.7738 4.59878 9.83971C4.62237 8.73115 4.76389 7.71694 4.88182 7.57542C4.99975 7.4339 5.73093 7.12728 6.48569 6.915C8.16032 6.44328 8.82074 5.94796 10.0708 4.27333C10.5897 3.56574 11.1322 2.99967 11.2973 2.99967C11.4624 2.99967 12.1464 3.21195 12.8304 3.4714ZM12.5947 7.08008C10.2361 7.97636 8.6086 9.39155 7.52363 11.4907C6.93397 12.6465 6.86321 13.0238 6.86321 15.0287C6.86321 17.1279 6.91038 17.3637 7.66515 18.7553C8.58501 20.4535 9.74075 21.5857 11.5097 22.5056C12.6183 23.0952 12.9957 23.166 15.0005 23.166C17.0053 23.166 17.3827 23.0952 18.6092 22.482C20.2131 21.6565 21.5339 20.2884 22.4774 18.5195C23.067 17.4109 23.1378 17.0335 23.1378 15.0287C23.1378 13.0238 23.067 12.6465 22.4774 11.5379C20.8971 8.51885 18.5385 6.98574 15.3543 6.84422C14.1514 6.79705 13.1608 6.89139 12.5947 7.08008ZM17.3591 9.62741C21.0622 11.302 22.0528 15.8306 19.3876 18.9676C17.2884 21.4442 12.9485 21.5385 10.7078 19.1327C8.6086 16.8684 8.6086 13.1889 10.7078 10.9247C12.2881 9.22644 15.2364 8.66037 17.3591 9.62741ZM13.9383 14.9816L15.4006 13.59C16.863 12.1984 17.6413 11.8682 18.2546 12.4814C18.9386 13.1654 18.5612 13.9202 16.58 15.9014C14.2685 18.2129 13.9383 18.2837 12.4759 16.8685C11.391 15.8071 11.2023 15.0759 11.8391 14.4627C12.3108 13.9674 12.7118 13.991 13.3722 14.5334L13.9383 14.9816Z" fill="white"/>
+						</svg>
+					</span>
+					<h3>Smiles Guaranteed</h3>
+					<p>
+						After digitally unwrapping your gift and card, your recipient can pick any options (eg. flavour), swap for another gift if they prefer, and leave their postage details.
+					</p>
+				</div>
+			</div>
+			<div class="col-md-12">
+				<div class="process-btn">
+					<span>
+						Try it out!
+					</span>
+					<a class="nav-link send-gift-button" href="#" tabindex="-1">
+						<span class="send-gift-icon">
+							<img src="assets/main-image/send-btn-icon.png">
+						</span>
+						Send Test Gift
+					</a>
+				</div>
+			</div>
+		</div>
+	</div>
+</section>
+<section class="gift-better">
+	<div class="container">
+		<div class="section-head">
+			<h6>Process</h6>
+			<h2>Use Cases</h2>
+			<p>
+				Harness the power of gifting across your business. We help companies create random moments of surprise and delight at scale.
+			</p>
+		</div>
+		<div class="gift-better-inner">
+			<div class="row">
+				<div class="col-md-6">
+					<div class="gift-better-image">
+						<img src="assets/main-image/gift-image-one.png">
+					</div>
+				</div>
+				<div class="col-md-6">
+					<div class="gift-better-content-main">
+						<div class="gift-better-content">
+							<h3>The Best Way to do Customer Loyalty</h3>
+							<p>
+								Welcome to personalisation and loyalty in the 21st century. Whether celebrating a customer milestone or anniversary, stand out from the crowd with an authentic and delightful gifting experience.
+							</p>
+							<ul>
+								<li>
+									<span>
+										<svg width="23" height="19" viewBox="0 0 23 19" fill="none" xmlns="http://www.w3.org/2000/svg">
+											<path d="M7.31818 14.7947L1.82955 9.15292L0 11.0335L7.31818 18.5559L23 2.43651L21.1705 0.555908L7.31818 14.7947Z" fill="#FF385C"/>
+										</svg>
+									</span>
+									Drive engagement
+								</li>
+								<li>
+									<span>
+										<svg width="23" height="19" viewBox="0 0 23 19" fill="none" xmlns="http://www.w3.org/2000/svg">
+											<path d="M7.31818 14.7947L1.82955 9.15292L0 11.0335L7.31818 18.5559L23 2.43651L21.1705 0.555908L7.31818 14.7947Z" fill="#FF385C"/>
+										</svg>
+									</span>
+									Build relationships & brand enthusiasts
+								</li>
+								<li>
+									<span>
+										<svg width="23" height="19" viewBox="0 0 23 19" fill="none" xmlns="http://www.w3.org/2000/svg">
+											<path d="M7.31818 14.7947L1.82955 9.15292L0 11.0335L7.31818 18.5559L23 2.43651L21.1705 0.555908L7.31818 14.7947Z" fill="#FF385C"/>
+										</svg>
+									</span>
+									Increase retention & customer lifetime values
+								</li>
+							</ul>
+						</div>
+					</div>
+				</div>
+			</div>
+			<div class="row">
+				<div class="col-md-6">
+					<div class="gift-better-content-main">
+						<div class="gift-better-content">
+							<h3>Meet Your Highest ROI sales Channel</h3>
+							<p>
+								Supercharge your sales team. Gifting is the best way to optimise your entire sales cycle, from generating leads and encouraging someone to take a meeting to nudging a prospect to a close - or just saying thank you!
+							</p>
+							<ul>
+								<li>
+									<span>
+										<svg width="23" height="19" viewBox="0 0 23 19" fill="none" xmlns="http://www.w3.org/2000/svg">
+											<path d="M7.31818 14.7947L1.82955 9.15292L0 11.0335L7.31818 18.5559L23 2.43651L21.1705 0.555908L7.31818 14.7947Z" fill="#FF385C"/>
+										</svg>
+									</span>
+									Generate leads and increase conversion rates
+								</li>
+								<li>
+									<span>
+										<svg width="23" height="19" viewBox="0 0 23 19" fill="none" xmlns="http://www.w3.org/2000/svg">
+											<path d="M7.31818 14.7947L1.82955 9.15292L0 11.0335L7.31818 18.5559L23 2.43651L21.1705 0.555908L7.31818 14.7947Z" fill="#FF385C"/>
+										</svg>
+									</span>
+									Accelerate your sales cycle
+								</li>
+								<li>
+									<span>
+										<svg width="23" height="19" viewBox="0 0 23 19" fill="none" xmlns="http://www.w3.org/2000/svg">
+											<path d="M7.31818 14.7947L1.82955 9.15292L0 11.0335L7.31818 18.5559L23 2.43651L21.1705 0.555908L7.31818 14.7947Z" fill="#FF385C"/>
+										</svg>
+									</span>
+									Grow revenue
+								</li>
+							</ul>
+						</div>
+					</div>
+				</div>
+				<div class="col-md-6">
+					<div class="gift-better-image">
+						<img src="assets/main-image/gift-image-two.png">
+					</div>
+				</div>
+			</div>
+			<div class="row">
+				<div class="col-md-6">
+					<div class="gift-better-image">
+						<img src="assets/main-image/gift-image-three.png">
+					</div>
+				</div>
+				<div class="col-md-6">
+					<div class="gift-better-content-main">
+						<div class="gift-better-content">
+							<h3>Employee Gifting Done Right</h3>
+							<p>
+								No more cheap merch or generic gifts that go straight in the 
+								bin - reward employees with gifts they actually want. Automate reminders for work anniversaries, job promotions and 
+								new-starters.
+							</p>
+							<ul>
+								<li>
+									<span>
+										<svg width="23" height="19" viewBox="0 0 23 19" fill="none" xmlns="http://www.w3.org/2000/svg">
+											<path d="M7.31818 14.7947L1.82955 9.15292L0 11.0335L7.31818 18.5559L23 2.43651L21.1705 0.555908L7.31818 14.7947Z" fill="#FF385C"/>
+										</svg>
+									</span>
+									Help attract top talent
+								</li>
+								<li>
+									<span>
+										<svg width="23" height="19" viewBox="0 0 23 19" fill="none" xmlns="http://www.w3.org/2000/svg">
+											<path d="M7.31818 14.7947L1.82955 9.15292L0 11.0335L7.31818 18.5559L23 2.43651L21.1705 0.555908L7.31818 14.7947Z" fill="#FF385C"/>
+										</svg>
+									</span>
+									Improve employee satisfaction & engagement
+								</li>
+								<li>
+									<span>
+										<svg width="23" height="19" viewBox="0 0 23 19" fill="none" xmlns="http://www.w3.org/2000/svg">
+											<path d="M7.31818 14.7947L1.82955 9.15292L0 11.0335L7.31818 18.5559L23 2.43651L21.1705 0.555908L7.31818 14.7947Z" fill="#FF385C"/>
+										</svg>
+									</span>
+									Improve employee retention
+								</li>
+							</ul>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+</section>
+<section class="collection">
+	<div class="collection-left-img">
+		<img src="assets/main-image/collection-left.png">
+	</div>
+	<div class="collection-text">
+		<div class="collection-text-inner">
+			<div class="section-head">
+				<h6>Collection</h6>
+				<h2>Our Gift Collection</h2>
+			</div>
+			<p>
+				We're constantly working to curate a perfect, on-trend gift collection that will make everyone smile. We partner with dozens of local businesses and values-driven companies making a difference in the world - from minority and LGBTQ-owned companies to climate sustainability initiatives.
+			</p>
+			<p>
+				Need some inspiration? Your dedicated account manager can help you work through our collections to find the perfect gift.
+			</p>
+		</div>
+	</div>
+	<div class="collection-right-img">
+		<img src="assets/main-image/collection-right.png">
+	</div>
+</section>
+<section class="faq">
+	<div class="container">
+		<div class="section-head">
+			<h6>FAQs</h6>
+			<h2>Frequently Asked Questions</h2>
+		</div>
+		<div class="faq-inner-tabs">
+			<div class="faq-tab">
+				<button class="accordion">
+					<span>
+						<svg width="24" height="18" viewBox="0 0 24 18" fill="none" xmlns="http://www.w3.org/2000/svg">
+							<path d="M8.00011 14.23L2.40011 8.63001L0.533447 10.4967L8.00011 17.9633L24.0001 1.96335L22.1334 0.0966797L8.00011 14.23Z" fill="#FF385C"/>
+						</svg>
+						How do I get started?
+					</span>
+					<span class="down-arrow">
+						<svg width="18" height="12" viewBox="0 0 18 12" fill="none" xmlns="http://www.w3.org/2000/svg">
+							<g clip-path="url(#clip0_104_283)">
+								<path fill-rule="evenodd" clip-rule="evenodd" d="M2.12 11.6299L9 4.83008L15.88 11.6299L18 9.52979L9 0.629883L0 9.52979L2.12 11.6299Z" fill="black"/>
+							</g>
+							<defs>
+								<clipPath id="clip0_104_283">
+									<rect width="18" height="11" fill="white" transform="translate(0 0.629883)"/>
+								</clipPath>
+							</defs>
+						</svg>
+					</span>
+				</button>
+				<div class="panel">
+					<p>Creating an account is free and takes under 5 minutes. Follow the link here.</p>
+				</div>
+			</div>
+			<div class="faq-tab">
+				<button class="accordion">
+					<span>
+						<svg width="24" height="18" viewBox="0 0 24 18" fill="none" xmlns="http://www.w3.org/2000/svg">
+							<path d="M8.00011 14.23L2.40011 8.63001L0.533447 10.4967L8.00011 17.9633L24.0001 1.96335L22.1334 0.0966797L8.00011 14.23Z" fill="#FF385C"/>
+						</svg>
+						Do I need my recipient’s address to send the gift?
+					</span>
+					<span class="down-arrow">
+						<svg width="18" height="12" viewBox="0 0 18 12" fill="none" xmlns="http://www.w3.org/2000/svg">
+							<g clip-path="url(#clip0_104_283)">
+								<path fill-rule="evenodd" clip-rule="evenodd" d="M2.12 11.6299L9 4.83008L15.88 11.6299L18 9.52979L9 0.629883L0 9.52979L2.12 11.6299Z" fill="black"/>
+							</g>
+							<defs>
+								<clipPath id="clip0_104_283">
+									<rect width="18" height="11" fill="white" transform="translate(0 0.629883)"/>
+								</clipPath>
+							</defs>
+						</svg>
+					</span>
+				</button>
+				<div class="panel">
+					<p>Creating an account is free and takes under 5 minutes. Follow the link here.</p>
+				</div>
+			</div>
+			<div class="faq-tab">
+				<button class="accordion">
+					<span>
+						<svg width="24" height="18" viewBox="0 0 24 18" fill="none" xmlns="http://www.w3.org/2000/svg">
+							<path d="M8.00011 14.23L2.40011 8.63001L0.533447 10.4967L8.00011 17.9633L24.0001 1.96335L22.1334 0.0966797L8.00011 14.23Z" fill="#FF385C"/>
+						</svg>
+						Can a recipient swap a gift if they don’t like it?
+					</span>
+					<span class="down-arrow">
+						<svg width="18" height="12" viewBox="0 0 18 12" fill="none" xmlns="http://www.w3.org/2000/svg">
+							<g clip-path="url(#clip0_104_283)">
+								<path fill-rule="evenodd" clip-rule="evenodd" d="M2.12 11.6299L9 4.83008L15.88 11.6299L18 9.52979L9 0.629883L0 9.52979L2.12 11.6299Z" fill="black"/>
+							</g>
+							<defs>
+								<clipPath id="clip0_104_283">
+									<rect width="18" height="11" fill="white" transform="translate(0 0.629883)"/>
+								</clipPath>
+							</defs>
+						</svg>
+					</span>
+				</button>
+				<div class="panel">
+					<p>Creating an account is free and takes under 5 minutes. Follow the link here.</p>
+				</div>
+			</div>
+			<div class="faq-tab">
+				<button class="accordion">
+					<span>
+						<svg width="24" height="18" viewBox="0 0 24 18" fill="none" xmlns="http://www.w3.org/2000/svg">
+							<path d="M8.00011 14.23L2.40011 8.63001L0.533447 10.4967L8.00011 17.9633L24.0001 1.96335L22.1334 0.0966797L8.00011 14.23Z" fill="#FF385C"/>
+						</svg>
+						When is payment for gifts made?
+					</span>
+					<span class="down-arrow">
+						<svg width="18" height="12" viewBox="0 0 18 12" fill="none" xmlns="http://www.w3.org/2000/svg">
+							<g clip-path="url(#clip0_104_283)">
+								<path fill-rule="evenodd" clip-rule="evenodd" d="M2.12 11.6299L9 4.83008L15.88 11.6299L18 9.52979L9 0.629883L0 9.52979L2.12 11.6299Z" fill="black"/>
+							</g>
+							<defs>
+								<clipPath id="clip0_104_283">
+									<rect width="18" height="11" fill="white" transform="translate(0 0.629883)"/>
+								</clipPath>
+							</defs>
+						</svg>
+					</span>
+				</button>
+				<div class="panel">
+					<p>Creating an account is free and takes under 5 minutes. Follow the link here.</p>
+				</div>
+			</div>
+			<div class="faq-tab">
+				<button class="accordion">
+					<span>
+						<svg width="24" height="18" viewBox="0 0 24 18" fill="none" xmlns="http://www.w3.org/2000/svg">
+							<path d="M8.00011 14.23L2.40011 8.63001L0.533447 10.4967L8.00011 17.9633L24.0001 1.96335L22.1334 0.0966797L8.00011 14.23Z" fill="#FF385C"/>
+						</svg>
+						How much does Kado cost per month?
+					</span>
+					<span class="down-arrow">
+						<svg width="18" height="12" viewBox="0 0 18 12" fill="none" xmlns="http://www.w3.org/2000/svg">
+							<g clip-path="url(#clip0_104_283)">
+								<path fill-rule="evenodd" clip-rule="evenodd" d="M2.12 11.6299L9 4.83008L15.88 11.6299L18 9.52979L9 0.629883L0 9.52979L2.12 11.6299Z" fill="black"/>
+							</g>
+							<defs>
+								<clipPath id="clip0_104_283">
+									<rect width="18" height="11" fill="white" transform="translate(0 0.629883)"/>
+								</clipPath>
+							</defs>
+						</svg>
+					</span>
+				</button>
+				<div class="panel">
+					<p>Creating an account is free and takes under 5 minutes. Follow the link here.</p>
+				</div>
+			</div>
+			<div class="faq-tab">
+				<button class="accordion">
+					<span>
+						<svg width="24" height="18" viewBox="0 0 24 18" fill="none" xmlns="http://www.w3.org/2000/svg">
+							<path d="M8.00011 14.23L2.40011 8.63001L0.533447 10.4967L8.00011 17.9633L24.0001 1.96335L22.1334 0.0966797L8.00011 14.23Z" fill="#FF385C"/>
+						</svg>
+						Where can I send gifts?
+					</span>
+					<span class="down-arrow">
+						<svg width="18" height="12" viewBox="0 0 18 12" fill="none" xmlns="http://www.w3.org/2000/svg">
+							<g clip-path="url(#clip0_104_283)">
+								<path fill-rule="evenodd" clip-rule="evenodd" d="M2.12 11.6299L9 4.83008L15.88 11.6299L18 9.52979L9 0.629883L0 9.52979L2.12 11.6299Z" fill="black"/>
+							</g>
+							<defs>
+								<clipPath id="clip0_104_283">
+									<rect width="18" height="11" fill="white" transform="translate(0 0.629883)"/>
+								</clipPath>
+							</defs>
+						</svg>
+					</span>
+				</button>
+				<div class="panel">
+					<p>Creating an account is free and takes under 5 minutes. Follow the link here.</p>
+				</div>
+			</div>
+		</div>
+	</div>
+</section>
+<footer class="gt-site-footer ">
+	<div class="container ">
+		<div class="row justify-content-between ">
+			<div class="col col-12 col-md-2 col-lg-2 ">
+				<div class="gt-site-footer-logo ">
+					<img src="assets/main-image/b-b-logo.png" alt="logo-light " class="img-fluid ">
+				</div>
+			</div>
+			<div class="col col-6 col-md-3 col-lg-3 ">
+				<div class="gt-site-footer-menu ">
+					<h3 class="gt-site-footer-menu-title ">About Kado
+					</h3>
+					<ul class="gt-footer-menu-list ">
+						<li class="gt-footer-menu-item ">
+							<a href="# " class="gt-footer-menu-link ">Gift Emporium</a>
+						</li>
+						<li class="gt-footer-menu-item ">
+							<a href="# " class="gt-footer-menu-link ">Contact Us </a>
+						</li>
+						<li class="gt-footer-menu-item ">
+							<a href="# " class="gt-footer-menu-link ">Gift History</a>
+						</li>
+						<li class="gt-footer-menu-item ">
+							<a href="# " class="gt-footer-menu-link ">Gift Finder</a>
+						</li>
+					</ul>
+				</div>
+			</div>
+			<div class="col col-6 col-md-2 col-lg-2 ">
+				<div class="gt-site-footer-menu ">
+					<h3 class="gt-site-footer-menu-title ">For Business </h3>
+					<ul class="gt-footer-menu-list ">
+						<li class="gt-footer-menu-item ">
+							<a href="# " class="gt-footer-menu-link ">Contact Us</a>
+						</li>
+						<li class="gt-footer-menu-item ">
+							<a href="# " class="gt-footer-menu-link ">Browse Gifts</a>
+						</li>
+					</ul>
+				</div>
+			</div>
+			<div class="col col-6 col-md-2 col-lg-2 d-none d-md-block ">
+				<div class="gt-site-footer-menu ">
+					<h3 class="gt-site-footer-menu-title ">App</h3>
+					<div class="gt-app-content ">
+						<div class="gt-app-qr-code ">
+							<img src="assets/main-image/app-qr-code.png" alt="app-qr-code " class="img-fluid ">
+						</div>
+						<p class="gt-app-qr-description ">Scan to download the Goody app</p>
+					</div>
+				</div>
+			</div>
+		</div>
+
+		<div class="gt-site-info-content ">
+			<p class="gt-site-info-description ">© 2023 KadoBusiness. All Right Reserved.</p>
+			<ul class="gt-site-social-list ">
+				<li class="gt-site-social-item ">
+					<a href="# " class="gt-site-social-link ">
+						<svg width="15" height="16" viewBox="0 0 15 16" fill="none" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+							<g clip-path="url(#clip0_104_212)">
+							<rect y="0.629883" width="15" height="15" fill="url(#pattern0)"/>
+							</g>
+							<defs>
+								<pattern id="pattern0" patternContentUnits="objectBoundingBox" width="1" height="1">
+									<use xlink:href="#image0_104_212" transform="scale(0.0666667)"/>
+								</pattern>
+								<clipPath id="clip0_104_212">
+									<rect width="15" height="15" fill="white" transform="translate(0 0.629883)"/>
+								</clipPath>
+								<image id="image0_104_212" width="15" height="15" xlink:href="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAA8AAAAPCAYAAAA71pVKAAABWUlEQVQokY3TTYuPYRQG8N9/zMZINhZC2SChKS+NMs1ilI3C0sJminwEH8AHkLWdlJKdl4WXopkoNYVkJxsLH0CKYi7dM+fO4980XHU/5z7nPtc513M/55GkrVGSG0l+ZGOsJLmVZFvjNRK8x2E8xVt8xS+0wxEmsAlTuFrnO1vX69XrUKnYaO1PsrfyH6vN4jqE2SRXkpwuf6Zyp5NcbptJa3jpD5q8Jzg1iC3jPBbwCftasJN/DhKfYw4X8QJH8BDPcLBytq8+S8q1knai/Atjr3C84ufKX2jORFVK2bmyd/2N5fLmh9FOHpV9XfbsGLnLfbUeuWMJb3AfZ7AVs/iAL7g3TJ4cs136Ih4NYp9xcuCvKu2kmcHBNxyrTzWNj3XbQxxdu6nkZt3k7v+YsLY298Fqs926t+p7cAfvanZXxmZ7Cw7gEr5jV682leT2P/6ojgdJdiTxG9BwYjaG1QJFAAAAAElFTkSuQmCC"/>
+							</defs>
+						</svg>
+					</a>
+				</li>
+				<li class="gt-site-social-item ">
+					<a href="# " class="gt-site-social-link ">
+						<svg width="15" height="13" viewBox="0 0 15 13" fill="none" xmlns="http://www.w3.org/2000/svg">
+							<g clip-path="url(#clip0_104_216)">
+								<path fill-rule="evenodd" clip-rule="evenodd" d="M14.5703 1.98992C14.0203 2.22004 13.4417 2.37474 12.8502 2.44988C13.4706 2.09322 13.9372 1.51993 14.1603 0.84002C13.5732 1.17598 12.9346 1.4127 12.2703 1.54022C11.9845 1.24926 11.6437 1.01799 11.2677 0.86004C10.8917 0.702092 10.4881 0.620708 10.0803 0.620294C9.29948 0.611753 8.5471 0.9131 7.9884 1.45867C7.42971 2.00425 7.11024 2.74913 7.10022 3.52996C7.0977 3.75194 7.12126 3.97361 7.17029 4.19012C5.98851 4.1399 4.83024 3.84347 3.76953 3.32C2.70882 2.79653 1.76899 2.05751 1.01025 1.15008C0.625604 1.78766 0.50551 2.55013 0.675537 3.27508C0.845564 4.00003 1.29227 4.62989 1.92029 5.02996C1.44875 5.0231 0.985785 4.90297 0.570312 4.67986V4.71014C0.579561 5.3893 0.823594 6.0441 1.26111 6.56365C1.69862 7.0832 2.30253 7.43554 2.97021 7.56024C2.71273 7.62974 2.44698 7.663 2.1803 7.65984C1.99237 7.66352 1.80454 7.64695 1.62024 7.61004C1.82149 8.19254 2.19734 8.69882 2.69653 9.06024C3.19572 9.42165 3.79406 9.6207 4.41028 9.63006C3.34443 10.4344 2.04563 10.8699 0.710327 10.8703C0.469723 10.8722 0.229147 10.8588 -0.00976562 10.8303C1.36645 11.6891 2.95815 12.1397 4.58032 12.1301C5.68322 12.155 6.78005 11.9601 7.80688 11.5568C8.83372 11.1536 9.77 10.5502 10.5612 9.78143C11.3523 9.01261 11.9825 8.09366 12.415 7.07879C12.8475 6.06392 13.0737 4.97346 13.0803 3.87029C13.0803 3.74029 13.0803 3.61992 13.0703 3.48992C13.6585 3.08671 14.1671 2.57815 14.5703 1.98992V1.98992Z" fill="white"/>
+							</g>
+							<defs>
+								<clipPath id="clip0_104_216">
+									<rect width="14.56" height="11.5" fill="white" transform="translate(0 0.629883)"/>
+								</clipPath>
+							</defs>
+						</svg>
+					</a>
+				</li>
+				<li class="gt-site-social-item ">
+					<a href="# " class="gt-site-social-link ">
+						<svg width="14" height="13" viewBox="0 0 14 13" fill="none" xmlns="http://www.w3.org/2000/svg">
+							<g clip-path="url(#clip0_104_220)">
+								<path fill-rule="evenodd" clip-rule="evenodd" d="M0.450073 12.8999H2.25C2.36795 12.901 2.48158 12.8554 2.56592 12.773C2.65025 12.6905 2.69849 12.5779 2.70007 12.46V4.8301C2.69671 4.71274 2.64791 4.60114 2.56396 4.51906C2.48002 4.43698 2.3674 4.3904 2.25 4.38967H0.450073C0.332128 4.3886 0.21849 4.43465 0.134155 4.51711C0.0498201 4.59957 0.00158195 4.71216 1.46788e-08 4.8301V12.46C-1.51301e-05 12.5186 0.0116891 12.5763 0.0344238 12.6304C0.0571586 12.6844 0.0905235 12.7334 0.132446 12.7744C0.174369 12.8154 0.224022 12.8476 0.278564 12.8692C0.333107 12.8907 0.391456 12.9013 0.450073 12.8999ZM0.450073 3.04982H2.25C2.3674 3.04909 2.48002 3.003 2.56396 2.92092C2.64791 2.83884 2.69671 2.72724 2.70007 2.60988V1.06008C2.69671 0.942719 2.64791 0.831123 2.56396 0.749042C2.48002 0.666961 2.3674 0.620865 2.25 0.620136H0.450073C0.332128 0.619067 0.21849 0.664628 0.134155 0.747089C0.0498201 0.82955 0.00158195 0.942137 1.46788e-08 1.06008V2.60988C0.00158195 2.72782 0.0498201 2.84041 0.134155 2.92287C0.21849 3.00533 0.332128 3.05089 0.450073 3.04982ZM13.14 5.2798C12.8421 4.92086 12.4562 4.64543 12.02 4.48C11.2256 4.15858 10.3527 4.08475 9.51562 4.26857C8.6786 4.4524 7.9167 4.88506 7.33008 5.50978C7.16008 5.68978 7.04004 5.64969 7.04004 5.40969V4.8301C7.03846 4.71216 6.99022 4.59957 6.90588 4.51711C6.82155 4.43465 6.70803 4.3886 6.59009 4.38967H4.99011C4.87217 4.3886 4.75853 4.43465 4.67419 4.51711C4.58986 4.59957 4.54162 4.71216 4.54004 4.8301V12.46C4.54002 12.5186 4.55173 12.5763 4.57446 12.6304C4.5972 12.6844 4.63056 12.7334 4.67249 12.7744C4.71441 12.8154 4.76406 12.8476 4.8186 12.8692C4.87315 12.8907 4.93149 12.9013 4.99011 12.8999H6.78003C6.83865 12.9013 6.897 12.8907 6.95154 12.8692C7.00608 12.8476 7.05573 12.8154 7.09766 12.7744C7.13958 12.7334 7.17294 12.6844 7.19568 12.6304C7.21841 12.5763 7.23012 12.5186 7.2301 12.46V9.81008C7.19305 9.04399 7.2637 8.27623 7.44006 7.5298C7.56931 7.12342 7.83865 6.77615 8.20007 6.54982C8.56848 6.29916 9.00449 6.16673 9.45007 6.16994C9.78227 6.16139 10.1094 6.25166 10.39 6.42971C10.6502 6.61098 10.8463 6.87028 10.9501 7.16994C11.0988 7.84927 11.1561 8.54527 11.1201 9.23976V12.46C11.1201 12.5186 11.1318 12.5763 11.1545 12.6304C11.1773 12.6844 11.2105 12.7334 11.2524 12.7744C11.2944 12.8154 11.344 12.8476 11.3986 12.8692C11.4531 12.8907 11.5115 12.9013 11.5701 12.8999H13.3701C13.428 12.9003 13.4854 12.8892 13.5389 12.8672C13.5925 12.8452 13.6412 12.8129 13.6821 12.772C13.7231 12.7311 13.7554 12.6825 13.7773 12.6289C13.7993 12.5754 13.8105 12.5179 13.8101 12.46V8.13967C13.8284 7.54963 13.7814 6.95961 13.67 6.3799C13.5739 5.97962 13.3931 5.60446 13.14 5.2798Z" fill="white"/>
+							</g>
+							<defs>
+								<clipPath id="clip0_104_220">
+									<rect width="13.81" height="12.28" fill="white" transform="translate(0 0.629883)"/>
+								</clipPath>
+							</defs>
+						</svg>
+					</a>
+				</li>
+			</ul>
+		</div>
+	</div>
+</footer>
+
+
+<!-- Link All JS -->
+<script src="assets/js/jquery-3.6.0.min.js"></script>
+<script src="assets/js/emojionearea.js"></script>
+<script src="assets/js/slick.min.js"></script>
+<script src="assets/js/file_upload.js"></script>
+<script src="assets/js/bootstrap.bundle.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-touch-events/2.0.0/jquery.mobile-events.min.js"> </script>
+<script src="assets/js/custom.js"></script>
+<script>
+// I've added annotations to make this easier to follow along at home. Good luck learning and check out my other pens if you found this useful
+
+
+// First let's set the colors of our sliders
+const settings={
+  fill: '#1abc9c',
+  background: '#d7dcdf'
+}
+
+// First find all our sliders
+const sliders = document.querySelectorAll('.range-slider');
+
+// Iterate through that list of sliders
+// ... this call goes through our array of sliders [slider1,slider2,slider3] and inserts them one-by-one into the code block below with the variable name (slider). We can then access each of wthem by calling slider
+Array.prototype.forEach.call(sliders,(slider)=>{
+  // Look inside our slider for our input add an event listener
+//   ... the input inside addEventListener() is looking for the input action, we could change it to something like change
+  slider.querySelector('input').addEventListener('input', (event)=>{
+    // 1. apply our value to the span
+    slider.querySelector('span').innerHTML = event.target.value;
+    // 2. apply our fill to the input
+    applyFill(event.target);
+  });
+  // Don't wait for the listener, apply it now!
+  applyFill(slider.querySelector('input'));
+});
+
+// This function applies the fill to our sliders by using a linear gradient background
+function applyFill(slider) {
+  // Let's turn our value into a percentage to figure out how far it is in between the min and max of our input
+  const percentage = 100*(slider.value-slider.min)/(slider.max-slider.min);
+  // now we'll create a linear gradient that separates at the above point
+  // Our background color will change here
+  const bg = `linear-gradient(90deg, ${settings.fill} ${percentage}%, ${settings.background} ${percentage+0.1}%)`;
+  slider.style.background = bg;
+}
+
+$('.right_slider_gift_inner').slick({
+  infinite: true,
+  slidesToShow: 1,
+  slidesToScroll: 1,
+  arrows: false,
+  dots: true,
+  adaptiveHeight: true,
+  draggable: false,
+});
+
+$(".shipping-manually-address").click(function() {
+        $(".shi-select-address").hide();
+        $(".shi-manually-address").show();
+    })
+
+// swipe right
+
+$('.boombox3').bind('swiperight', handler3);
+	function handler3(event) { 
+		$('.boombox3') .removeClass("beatsUP");
+		$('.swap_slider_new').toggleClass('hover_card_swipe');
+		$('.card_vk').toggleClass('hove');
+		$('.swap-content').toggleClass('super_card_hove');
+		$('.swap_btn').toggle();
+		$('.swap_close_card').toggle();
+		$('.swaptitle').toggle();
+	}  
+
+	// swipe left
+
+	$('.boombox3').bind('swipeleft', handler4);
+	function handler4(event) { 
+	  $('.boombox3') .addClass("beatsUP");
+		$('.swap_slider_new').toggleClass('hover_card_swipe');
+		$('.card_vk').toggleClass('hove');
+		$('.swap-content').toggleClass('super_card_hove');
+		$('.swap_btn').toggle();
+		$('.swap_close_card').toggle();
+		$('.swaptitle').toggle();
+	  
+	}  
+	$('.swap_btn').click(function(){
+		$('.swap_slider_new').toggleClass('hover_card_swipe');
+		$('.card_vk').toggleClass('hove');
+		$('.swap-content').toggleClass('super_card_hove');
+		$('.swap_btn').toggle();
+		$('.swap_close_card').toggle();
+		$('.swaptitle').toggle();
+	}); 
+	$('.back').click(function(){
+		$('.swap_slider_new').toggleClass('hover_card_swipe');
+		$('.card_vk').toggleClass('hove');
+		$('.swap-content').toggleClass('super_card_hove');
+		$('.swap_btn').toggle();
+		$('.swap_close_card').toggle();
+		$('.swaptitle').toggle();
+	});
+
+
+           
+	
+	</script>
+</body>
+</html>

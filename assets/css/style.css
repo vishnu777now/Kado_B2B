@@ -396,11 +396,14 @@ section.faq {
   color: #414141;
 }
 .faq-tab button.accordion.active span.down-arrow svg {
-  transform: rotate(180deg);
+  transform: rotate(0deg);
 }
 .faq-tab button.accordion svg {
   margin-right: 8px;
   transition: all ease .5s;
+}
+.faq-tab span.down-arrow svg {
+  transform: rotate(180deg);
 }
 .faq-tab:last-child {
   margin: 0;
@@ -474,4 +477,22 @@ section.faq {
   text-decoration: none;
   border-radius: 50%;
   color: #fff;
+}
+.main_page_nav ul.navbar-nav a.nav-link.browse-gift-nv:hover {
+  color: #ff385c;
+  background-color: transparent;
+}
+.main_page_nav ul.navbar-nav li.nav-item a:hover {
+  background-color: #414141;
+  color: #F6F6F6;
+}
+section.banner.define-float form button:hover {
+  color: #FF385C;
+  background-color: #fff;
+}
+.faq-tab .panel {
+  padding: 0;
+}
+li.gt-footer-menu-item a:hover {
+  color: #ff385c;
 }
